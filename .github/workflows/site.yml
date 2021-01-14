@@ -31,9 +31,8 @@ jobs:
           command: "site"
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
-      - uses: jerrykan/ghpages@v0.3.0.1
+      - uses: maxheld83/ghpages@v0.3.0
         name: GitHub Pages Deploy
         env:
           BUILD_DIR: "site/status-page/__sapper__/export/"
-          GH_COMMITTER: "tasultimate-bot"
           GH_PAT: ${{ secrets.GH_PAT }}
